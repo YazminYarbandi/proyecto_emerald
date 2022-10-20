@@ -21,6 +21,7 @@ nav ul li {
     font-size: xx-large;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 
@@ -223,4 +224,10 @@ footer {
 
 h3 {
     font-size: xx-large;
+}
+
+.card:hover{
+    display:grid;
+    grid-template-areas: 
+    "card-1 card-2";
 }
