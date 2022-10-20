@@ -5,7 +5,7 @@
 }
 
 body {
-    background: lightgray
+    background: lightgray;
 }
 
 header {
@@ -20,7 +20,7 @@ nav ul li {
     text-align: right;
     font-size: xx-large;
     color: black;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -36,10 +36,14 @@ nav ul li {
 
 }
 
-.img__portada {
+/* .img__portada {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
+}*/
 
+.carrusel {
+    width: 80%;
+    padding: 10%;
 }
 
 .img__index: {
@@ -99,26 +103,85 @@ nav ul li {
 
 
 /*SECCION FORMULARIO - CONTACTO */
+
+
+
+
 .bg-form {
-    background-image: url(/img/33d95a3db032b05e09c0c6b5667dd456.jpg);
-    background-size: 200px;
     border-radius: 40px;
-    margin: 25px 700px;
-    padding: 30px;
-    font-size:x-large;
+    margin-left: 3%;
+    font-size: x-large;
     font-weight: bold;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-family: inherit;
 }
 
-.mapa {
-    text-align: right;
-    display: contents;
-    justify-content: center;
-    align-items: center;
+
+
+#gridFormu {
+    width: 100%;
+
 }
+
+
+#formu {
+    grid-area: formu;
+
+
+}
+
+#map {
+    grid-area: map;
+    border-radius: 100px;
+}
+
+
+
+h3 {
+    grid-area: h3;
+
+}
+
+@media(min-width:480x) {
+    #gridFormu {
+        display: grid;
+        grid-template-areas:
+            "h3 h3"
+            "formu "
+            "map";
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        gap: 1px;
+    }
+}
+
+@media(min-width:768px) {
+    #gridFormu {
+        display: grid;
+        grid-template-areas:
+            "h3 h3"
+            "formu map";
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        gap: 1px;
+    }
+
+}
+@media(min-width:1024px) {
+    #gridFormu {
+        display: grid;
+        grid-template-areas:
+            "h3 h3"
+            "formu map";
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        gap: 1px;
+    }
+
+}
+
 
 /*SECCIÓN ARTÍCULO*/
 
@@ -132,7 +195,7 @@ nav ul li {
 .text__page {
     font-size: xx-large;
     display: flexbox;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     background-color: black;
     color: white;
@@ -143,20 +206,21 @@ footer {
     text-align: center;
     background-color: black;
     color: white;
+    grid-area: footer;
 }
 
 /*SECCIÓN CURSOS*/
-.cursos__img{
+.cursos__img {
     border-radius: 30px;
     border: 10px solid;
     margin: 30px;
 }
 
 .cursos__text {
-    text-align: center ;
+    text-align: center;
     background-color: azure;
 }
 
-h3{
-    font-size: xx-large ;
+h3 {
+    font-size: xx-large;
 }
