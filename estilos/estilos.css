@@ -24,6 +24,9 @@ nav ul li {
 
 }
 
+.emerald__list{ 
+    list-style: none;
+}
 
 .clearfix {
     clear: both;
@@ -175,6 +178,9 @@ h3 {
 
 }
 
+.emerald__redes{
+    list-style: none;
+}
 
 /*SECCIÓN ARTÍCULO*/
 
