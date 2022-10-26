@@ -1,0 +1,237 @@
+@import "generales";
+@import "generales";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgray;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    background-color: white;
+}
+
+nav ul li {
+    text-align: right;
+    font-size: xx-large;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.img-logo {
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+/* .img__portada {
+    display: flex;
+    justify-content: space-around; 
+}*/
+
+.carrusel {
+    width: 80%;
+    padding: 10%;
+}
+
+.img__index: {
+    margin: 40px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 2px 4px 15px;
+}
+
+.titulo {
+    font-size: 5rem;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: 2px;
+}
+
+.newsletter {
+    font-style: italic;
+    font-size: xx-large;
+    margin-left: 50px;
+}
+
+/*SECCIÓN SERVICIOS*/
+
+.container {
+    width: 15%;
+    margin: 1.25rem;
+    padding: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0rem 0.06rem 0.63rem rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    display: inline-block;
+    justify-content: center;
+
+}
+
+.card:hover {
+    box-shadow: 16rem 1.250rem 1.25rem rgba(0, 0, 0, 0.4);
+    transform: translate(-3%);
+    display: inline-block;
+}
+
+
+.secciones__sitio {
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.text {
+    font-size: xx-large;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+/*SECCION FORMULARIO - CONTACTO */
+
+
+
+
+.bg-form {
+    border-radius: 40px;
+    margin-left: 3%;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: inherit;
+}
+
+
+
+#gridFormu {
+    width: 100%;
+
+}
+
+
+#formu {
+    grid-area: formu;
+
+
+}
+
+#map {
+    grid-area: map;
+    border-radius: 100px;
+}
+
+
+
+h3 {
+    grid-area: h3;
+
+}
+
+@media(min-width:480x) {
+    #gridFormu {
+        display: grid;
+        grid-template-areas:
+            "h3 h3"
+            "formu "
+            "map";
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        gap: 1px;
+    }
+}
+
+@media(min-width:768px) {
+    #gridFormu {
+        display: grid;
+        grid-template-areas:
+            "h3 h3"
+            "formu map";
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        gap: 1px;
+    }
+
+}
+@media(min-width:1024px) {
+    #gridFormu {
+        display: grid;
+        grid-template-areas:
+            "h3 h3"
+            "formu map";
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        gap: 1px;
+    }
+
+}
+
+
+/*SECCIÓN ARTÍCULO*/
+
+.img-articulo {
+    margin: 40px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 2px 4px 15px;
+}
+
+.text__page {
+    font-size: xx-large;
+    display: flexbox;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    grid-area: footer;
+}
+
+/*SECCIÓN CURSOS*/
+.cursos__img {
+    border-radius: 30px;
+    border: 10px solid;
+    margin: 30px;
+}
+
+.cursos__text {
+    text-align: center;
+    background-color: azure;
+}
+
+h3 {
+    font-size: xx-large;
+}
+
+.card:hover{
+    display:grid;
+    grid-template-areas: 
+    "card-1 card-2";
+}
