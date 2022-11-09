@@ -1,5 +1,4 @@
-@import "generales";
-@import "generales";
+@import './variables';
 
 
 * {
@@ -51,7 +50,7 @@ nav ul li {
     padding: 10%;
 }
 
-.img__index: {
+.img__index {
     margin: 40px 10px;
     border-radius: 10px;
     border-style: solid;
@@ -61,7 +60,7 @@ nav ul li {
 .titulo {
     font-size: 5rem;
     color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: $titlefont;
     text-align: center;
     text-shadow: 2px;
 }
