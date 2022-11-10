@@ -1,0 +1,41 @@
+.container {
+    width: 15%;
+    margin: 1.25rem;
+    padding: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0rem 0.06rem 0.63rem rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    display: inline-block;
+    justify-content: center;
+
+    
+
+}
+
+.seccion-art{
+
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+
+}
+
+.serviceText{
+
+     padding: 10px;
+
+}
+
+.secciones__sitio {
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.text {
+    font-size: xx-large;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
